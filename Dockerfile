@@ -112,4 +112,6 @@ RUN jupyter lab build
 
 WORKDIR /home/jovyan
 # CMD /bin/bash
+
+# jupyter-lab起動
 CMD ["jupyter-lab", "--no-browser", "--allow-root", "--port=8888", "--ip=0.0.0.0", "--NotebookApp.notebook_dir='/workspace'", "--NotebookApp.token=''"]
